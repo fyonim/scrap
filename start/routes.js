@@ -22,5 +22,5 @@ Route.get('/', () => {
 
 Route.group(() => {
   Route.get("index", "News/TribunController.getIndex");
-  Route.get("news", "News/TribunController.getData");
+  Route.get("news", "News/TribunController.getNewsDetail");
 }).prefix("v1/tribun");
