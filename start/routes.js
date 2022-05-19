@@ -22,5 +22,11 @@ Route.get('/', () => {
 
 Route.group(() => {
   Route.get("index", "News/TribunController.getIndex");
-  Route.get("news", "News/TribunController.getNewsDetail");
-}).prefix("v1/tribun");
+  Route.get("newstribun", "News/TribunController.getNewsDetail");
+  Route.get("newscnn", "News/CNNIndonesiaController.getNewsDetail");
+  Route.get("newsbbc", "News/BBCWorldController.getNewsDetail");
+  Route.get("newscbn", "News/CBNWorldController.getNewsDetail");
+  Route.get("newscnbc", "News/CNBCWorldController.getNewsDetail");
+  Route.get("newswebmd", "News/WebMDController.getNewsDetail");
+  Route.get("newsmoneytalks", "News/MoneyTalksController.getNewsDetail");
+}).prefix("v1/scraper");
