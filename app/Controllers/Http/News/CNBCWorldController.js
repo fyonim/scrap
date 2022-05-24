@@ -8,7 +8,7 @@ class CNBCWorldController {
         let result = axios.get(query).then((res) => {
             let html = res.data;
             let $ = cheerio.load(html);
-            let indeks =$("div[class='group']");
+            let indeks =$("div[class='ArticleBody-articleBody']");
 
             let data_detail = [];
             indeks.map(function() {
